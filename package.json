@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "bn": "nodemon ./api/backend.js",
+    "fn": "nodemon ./api/frontend.js",
+    "fn1": "nodemon ./api/frontend1.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
+    "http-proxy": "^1.18.1",
     "http-proxy-middleware": "^3.0.0",
-    "nodemon": "^3.1.4"
+    "node-http-proxy": "^0.2.4",
+    "nodemon": "^3.1.4",
+    "redirect-https": "^1.3.1"
   }
 }
